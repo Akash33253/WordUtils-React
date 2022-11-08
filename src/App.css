@@ -54,3 +54,8 @@
 body{
   background-color: #dde0d6;
 }
+#logo1{
+    /* border: 2px black solid; */
+    width: 20px;
+    height: 26px;
+}
