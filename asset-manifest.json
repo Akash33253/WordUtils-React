@@ -1,0 +1,15 @@
+{
+  "files": {
+    "main.css": "/WordUtils-React/static/css/main.f0d95859.css",
+    "main.js": "/WordUtils-React/static/js/main.d418e5eb.js",
+    "static/js/787.719ec76d.chunk.js": "/WordUtils-React/static/js/787.719ec76d.chunk.js",
+    "index.html": "/WordUtils-React/index.html",
+    "main.f0d95859.css.map": "/WordUtils-React/static/css/main.f0d95859.css.map",
+    "main.d418e5eb.js.map": "/WordUtils-React/static/js/main.d418e5eb.js.map",
+    "787.719ec76d.chunk.js.map": "/WordUtils-React/static/js/787.719ec76d.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.f0d95859.css",
+    "static/js/main.d418e5eb.js"
+  ]
+}
