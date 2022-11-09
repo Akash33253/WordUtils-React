@@ -8,7 +8,7 @@ export default function Navbar(props) {
   let redThemeClick = ()=>{
     if(bgcolor==='rgb(139, 100, 100)')
      {
-        props.showAlert("Already in Red Mode Theme","warning");
+        props.showAlert("Already in Red Mode","warning");
      }
      else{
       document.body.style.backgroundColor="#8b6464";
@@ -19,7 +19,7 @@ export default function Navbar(props) {
   let greenThemeClick = ()=>{
     if(bgcolor==='rgb(64, 94, 64)')
     {
-      props.showAlert("Already in Green Mode Theme","warning");
+      props.showAlert("Already in Green Mode","warning");
     }
     else{
       document.body.style.backgroundColor="#405e40";
@@ -30,7 +30,7 @@ export default function Navbar(props) {
   let blueThemeClick = ()=>{
     if(bgcolor==='rgb(41, 41, 75)')
     {
-      props.showAlert("Already in Blue Mode Theme","warning");
+      props.showAlert("Already in Blue Mode","warning");
     }
     else{
       document.body.style.backgroundColor="#29294b";
@@ -41,7 +41,7 @@ export default function Navbar(props) {
   let greyThemeClick = ()=>{
     if(bgcolor==='rgb(78, 78, 78)')
     {
-      props.showAlert("Already in Grey Mode Theme","warning");
+      props.showAlert("Already in Grey Mode","warning");
     }
     else{
       document.body.style.backgroundColor="#4e4e4e";
@@ -53,7 +53,7 @@ export default function Navbar(props) {
     console.log(bgcolor);
     if(bgcolor==='rgb(221, 224, 214)')
     {
-      props.showAlert("Already in White Mode Theme","warning");
+      props.showAlert("Already in White Mode","warning");
     }
     else{
       document.body.style.backgroundColor="#dde0d6";

@@ -6,7 +6,7 @@ export default function TextForm(props) {
   const handleClearText = ()=>{
     // console.log("Upercase button has been clicked");
     if(text===''){
-      props.showAlert("There is no any text to clear","warning");
+      props.showAlert("Nothing to clear","warning");
     }
     else{
       setprevText(text);
@@ -23,51 +23,51 @@ export default function TextForm(props) {
   const handleUpCaseClick = ()=>{
     // console.log("Upercase button has been clicked");
     if(text===''){
-      props.showAlert("There is no any text to convert","warning");
+      props.showAlert("Nothing to convert","warning");
     }
     else{
       setprevText(text);
       setText(text.toUpperCase());
-      props.showAlert("All the text in the TextBox has been converted to upperCase letters","success");
+      props.showAlert("Converted to upperCase","success");
     }
   }
   
   const handleLowCaseClick = ()=>{
     // console.log("Upercase button has been clicked");
     if(text===''){
-      props.showAlert("There is no any text to convert","warning");
+      props.showAlert("Nothing to convert","warning");
     }
     else{
       setprevText(text);
       setText(text.toLowerCase());
-      props.showAlert("All the text in the TextBox has been converted to lowerCase letters","success");
+      props.showAlert("Converted to lowerCase","success");
     }
 
   }
   const handleCopy = ()=>{
     // console.log("Upercase button has been clicked");
     if(text===''){
-      props.showAlert("There is no any text to copy","warning");
+      props.showAlert("Nothing to copy","warning");
     }
     else{
       let t = document.getElementById("myBox")
       t.select();
       navigator.clipboard.writeText(t.value);
       document.getSelection().removeAllRanges();
-      props.showAlert("All the text in the TextBox has been copied to clipBoard","success");
+      props.showAlert("Copied to clipBoard","success");
     }
   }
   
   const handleExtraSpaces = ()=>{
     // console.log("Upercase button has been clicked");
     if(text===''){
-      props.showAlert("There is no any text to perform the  operation","warning");
+      props.showAlert("Nothing to Operate","warning");
     }
     else{
       setprevText(text);
       let newTex = text.split(/[ ]+/);
       setText(newTex.join(" "));
-      props.showAlert("All the extra spaces hase benn removed in the TextBox","success");
+      props.showAlert("Extra spaces Removed","success");
     }
   }
 
