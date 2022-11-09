@@ -1,15 +1,15 @@
 {
   "files": {
     "main.css": "/WordUtils-React/static/css/main.6de2b5c6.css",
-    "main.js": "/WordUtils-React/static/js/main.7e491aed.js",
+    "main.js": "/WordUtils-React/static/js/main.73d82898.js",
     "static/js/787.719ec76d.chunk.js": "/WordUtils-React/static/js/787.719ec76d.chunk.js",
     "index.html": "/WordUtils-React/index.html",
     "main.6de2b5c6.css.map": "/WordUtils-React/static/css/main.6de2b5c6.css.map",
-    "main.7e491aed.js.map": "/WordUtils-React/static/js/main.7e491aed.js.map",
+    "main.73d82898.js.map": "/WordUtils-React/static/js/main.73d82898.js.map",
     "787.719ec76d.chunk.js.map": "/WordUtils-React/static/js/787.719ec76d.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.6de2b5c6.css",
-    "static/js/main.7e491aed.js"
+    "static/js/main.73d82898.js"
   ]
 }
