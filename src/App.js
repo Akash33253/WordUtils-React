@@ -38,8 +38,10 @@ function App() {
           toggleMode={toggleMode}
           showAlert={showAlert}
         />
-        <div className="container my-4">
+        <div className="container my-2">
+          <div style={{"height" : "60px"}}>
           <Alert alert={alert} />
+          </div>
           <TextForm heading="Enter the text to analyse below" mode={mode} showAlert={showAlert}/>
           {/* <Routes>
             <Route exact  path="/" element={<TextForm heading="Enter the text to analyse below" mode={mode} showAlert={showAlert}/>}></Route>

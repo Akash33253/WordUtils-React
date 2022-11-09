@@ -4,30 +4,62 @@ import Logo from './Logo';
 // import { a } from 'react-router-dom';
 
 export default function Navbar(props) {
+  let bgcolor = document.body.style.backgroundColor;
   let redThemeClick = ()=>{
-    document.body.style.backgroundColor="#8b6464";
-    props.toggleMode("red");
-    props.showAlert("Red Mode Enabled","success")
+    if(bgcolor==='rgb(139, 100, 100)')
+     {
+        props.showAlert("Already in Red Mode Theme","warning");
+     }
+     else{
+      document.body.style.backgroundColor="#8b6464";
+      props.toggleMode("red");
+      props.showAlert("Red Mode Enabled","success")
+     }
   }
   let greenThemeClick = ()=>{
-    document.body.style.backgroundColor="#405e40";
-    props.toggleMode("green");
-    props.showAlert("Green Mode Enabled","success")
+    if(bgcolor==='rgb(64, 94, 64)')
+    {
+      props.showAlert("Already in Green Mode Theme","warning");
+    }
+    else{
+      document.body.style.backgroundColor="#405e40";
+      props.toggleMode("green");
+      props.showAlert("Green Mode Enabled","success")
+    }
   }
   let blueThemeClick = ()=>{
-    document.body.style.backgroundColor="#29294b";
-    props.toggleMode("blue");
-    props.showAlert("Blue Mode Enabled","success")
+    if(bgcolor==='rgb(41, 41, 75)')
+    {
+      props.showAlert("Already in Blue Mode Theme","warning");
+    }
+    else{
+      document.body.style.backgroundColor="#29294b";
+      props.toggleMode("blue");
+      props.showAlert("Blue Mode Enabled","success");
+    }
   }
   let greyThemeClick = ()=>{
-    document.body.style.backgroundColor="#4e4e4e";
-    props.toggleMode("grey");
-    props.showAlert("Grey Mode Enabled","success")
+    if(bgcolor==='rgb(78, 78, 78)')
+    {
+      props.showAlert("Already in Grey Mode Theme","warning");
+    }
+    else{
+      document.body.style.backgroundColor="#4e4e4e";
+      props.toggleMode("grey");
+      props.showAlert("Grey Mode Enabled","success")
+    }
   }
   let whiteThemeClick = ()=>{
-    document.body.style.backgroundColor="#dde0d6";
-    props.toggleMode("white");
-    props.showAlert("White Mode Enabled","success")
+    console.log(bgcolor);
+    if(bgcolor==='rgb(221, 224, 214)')
+    {
+      props.showAlert("Already in White Mode Theme","warning");
+    }
+    else{
+      document.body.style.backgroundColor="#dde0d6";
+      props.toggleMode("white");
+      props.showAlert("White Mode Enabled","success")
+    }
   }
   return (
     <nav className={`navbar navbar-expand-lg navbar-${props.mode} bg-${props.mode}`}>
@@ -52,12 +84,4 @@ export default function Navbar(props) {
   </div>
     </nav>
   )
-}
-Navbar.propTypes ={
-    title: PropTypes.string.isRequired,
-    aboutText : PropTypes.string
-}
-Navbar.defaultProps = {
-    title : "Set the Title",
-    aboutText : "Set about text"
 }
