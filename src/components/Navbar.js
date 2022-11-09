@@ -6,12 +6,13 @@ import Logo from './Logo';
 export default function Navbar(props) {
   let bgcolor = document.body.style.backgroundColor;
   let redThemeClick = ()=>{
-    if(bgcolor==='rgb(139, 100, 100)')
+    console.log(bgcolor);
+    if(bgcolor==='rgb(93, 61, 61)')
      {
         props.showAlert("Already in Red Mode","warning");
      }
      else{
-      document.body.style.backgroundColor="#8b6464";
+      document.body.style.backgroundColor="rgb(93 61 61)";
       props.toggleMode("red");
       props.showAlert("Red Mode Enabled","success")
      }
@@ -65,17 +66,14 @@ export default function Navbar(props) {
     <nav className={`navbar navbar-expand-lg navbar-${props.mode} bg-${props.mode}`}>
   <div className="container-fluid">
     <Logo/>
-    <a className="navbar-brand" href="#">{props.title}</a>
+    <a className="navbar-brand mx-3" href="#">{props.title}</a>
     <button className="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
       <span className="navbar-toggler-icon"></span>
     </button>
     <div className="collapse navbar-collapse" id="navbarSupportedContent">
       <ul className="navbar-nav me-auto mb-2 mb-lg-0">
-        <li className="nav-item">
-          <a className="nav-link active" aria-current="page" href="#">Home</a>
-        </li>
       </ul>
-      <div className="box" id='box1' style={{backgroundColor:"#8b6464"}} onClick={redThemeClick}></div>
+      <div className="box" id='box1' style={{backgroundColor:"rgb(93 61 61)"}} onClick={redThemeClick}></div>
       <div className="box" id='box2' style={{backgroundColor:"#405e40"}} onClick={greenThemeClick}></div>
       <div className="box" id='box3' style={{backgroundColor:"#29294b"}} onClick={blueThemeClick}></div>
       <div className="box" id='box4' style={{backgroundColor:"#4e4e4e"}} onClick={greyThemeClick}></div>
